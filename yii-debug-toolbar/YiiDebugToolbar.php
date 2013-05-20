@@ -78,7 +78,7 @@ class YiiDebugToolbar extends CWidget
         if (null === $this->_assetsUrl && 'cli' !== php_sapi_name())
             $this->_assetsUrl = Yii::app()
                 ->getAssetManager()
-                ->publish(dirname(__FILE__) . '/assets', false, -1, YII_DEBUG);
+                ->publish(dirname(__FILE__) . '/assets', false, -1);
         return $this->_assetsUrl;
     }
 
